@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="rspec" tests="9" skipped="0" failures="1" errors="0" time="14.270775" timestamp="2017-11-05T21:43:57-02:00" hostname="DESKTOP-QGJMSTB">
+<properties>
+<property name="seed" value="53032"/>
+</properties>
+<testcase classname="spec.books_get_list_spec" name="get /api/books status 200 listar livros" file="./spec/books_get_list_spec.rb" time="0.361241"></testcase>
+<testcase classname="spec.books_get_params_spec" name="get /api/books status 200 buscar por titulo" file="./spec/books_get_params_spec.rb" time="0.343791"></testcase>
+<testcase classname="spec.books_get_params_spec" name="get /api/books status 200 quando a pesquisa não retorna registros" file="./spec/books_get_params_spec.rb" time="0.328149"></testcase>
+<testcase classname="spec.books_get_unique_spec" name="get /api/books status 200 buscar um livro" file="./spec/books_get_unique_spec.rb" time="0.326908"></testcase>
+<testcase classname="spec.books_get_unique_spec" name="get /api/books status 404 quando o id do livro não exite" file="./spec/books_get_unique_spec.rb" time="0.327459"></testcase>
+<testcase classname="spec.books_post_spec" name="post /api/books status 200 cadastrar novo livro" file="./spec/books_post_spec.rb" time="0.344257"></testcase>
+<testcase classname="spec.books_post_spec" name="post /api/books status 409 quando o livro ja foi cadastrado" file="./spec/books_post_spec.rb" time="0.344070"></testcase>
+<testcase classname="spec.books_put_spec" name="PUT /api/books status 200 atualizar dados do livro" file="./spec/books_put_spec.rb" time="0.337288"></testcase>
+<testcase classname="spec.books_put_spec" name="PUT /api/books status 404 quando o livro não é encontrado" file="./spec/books_put_spec.rb" time="0.353834"><failure message="
+expected: &quot;Livro n\u00E3o encontrado!&quot;
+     got: &quot;Livro n\u00E3o encontrado.&quot;
+
+(compared using eql?)
+" type="RSpec::Expectations::ExpectationNotMetError">Failure/Error: expect(@result.parsed_response[&apos;message&apos;]).to eql &apos;Livro n├úo encontrado!&apos;
+
+  expected: &quot;Livro n\u00E3o encontrado!&quot;
+       got: &quot;Livro n\u00E3o encontrado.&quot;
+
+  (compared using eql?)
+./spec/books_put_spec.rb:97:in `block (3 levels) in &lt;top (required)&gt;&apos;</failure></testcase>
+</testsuite>
